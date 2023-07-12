@@ -44,10 +44,9 @@ export default function Accordion() {
           </div>
         </div>
 
-        <div className='w-full bg-black relative sm:mt-[70px]'>
-          <img src="/img/head_bg.svg" className='w-full' />
-          <div className='absolute text-[#3D4C6A] top-1/2 -translate-y-1/2 px-96 sm:w-80 sm:-translate-x-1/2 sm:px-2 sm:left-1/2'>
-          {/* <div className='absolute w-[900px] text-[#3D4C6A] top-1/2 -translate-y-1/2 left-1/2 -translate-x-2/3 sm:w-80 sm:-translate-x-1/2'> */}
+        <div className='w-full relative sm:mt-[70px] sm:h-80 bg-black'>
+          <img src="/img/head_bg.svg" className='w-full h-full  object-cover' />
+          <div className='absolute text-[#3D4C6A] top-1/2 -translate-y-1/2 px-96 sm:w-80 sm:-translate-x-1/2 sm:px-2 sm:left-1/2 sm:text-center'>
             <h1 className='text-7xl leading-snug font-semibold break-keep sm:text-base'>Tienex - Reshaping DeFi. Bridging traditional and decentralized finance.</h1>
             <p className='text-2xl mt-4 leading-snug break-keep sm:text-sm'>Tienex is a pioneer in the world of DeFi, providing a platform for creating, managing, and trading synthetic assets, including Real-World Assets (RWA). Embrace the democratized access to diverse financial markets made possible by blockchain technology.</p>
           </div>
@@ -102,7 +101,11 @@ export default function Accordion() {
           <div className='w-[485px] break-keep sm:w-full'>
             <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             <p> Blandit id fringilla turpis tempor enim. Vel tristique suspendisse</p>
-            {/* <div className='w-64 h-8 my-12'></div> */}
+            <div className='flex mt-16 mb-8 gap-4'>
+              {Array(4).fill('').map((item,index)=>{
+                return <img src={`/img/share${index}.png`} alt="" className='w-6 h-6' onClick={()=>toshare(index)}/>
+              })}
+            </div>
             <p className='text-lg'>Developers: GITHUB</p>
           </div>
           <div className='text-right pr-24 sm:pr-0 sm:text-left sm:pt-4'>
