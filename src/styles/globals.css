@@ -31,3 +31,55 @@ body {
 .hidenavigation{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.smShare{
+  width: 14px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 30px;
+}
+.smShare::after{
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: -300%;
+  left: -50%;
+  background-color: #333;
+  border-radius: 8px;
+}
+.smShare::before{
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: 300%;
+  left: -50%;
+  background-color: #333;
+  border-radius: 8px;
+}
+.sharePop{
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+.sharePop>div{
+  margin-left: auto;
+  margin-top: 70px;
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-sizing: content-box
+}
