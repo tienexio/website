@@ -71,7 +71,7 @@ export default function Accordion() {
           <div className='absolute top-0 max-w-7xl left-1/2 -translate-x-1/2 dash:px-32 w-full h-full sm:px-2'>
             <div className={` flex items-center justify-between w-full h-full sm:flex-col-reverse relative`}>
               <div className='text-[#3D4C6A] w-[620px] sm:w-full sm:text-center'>
-                <p className='text-6xl break-keep relative leading-snug sm:text-base'>Tokenization of R eal-World Assets (RAW)</p>
+                <p className='text-6xl break-keep relative leading-snug sm:text-base'>Tokenization of Real World Assets (RAW)</p>
                 <p className='text-2xl break-keep mt-4 leading-snug sm:text-base'>Tokenize physical or abstract assets, allowing wider investment participation and improved asset liquidity.</p>
               </div>
               <img src={`/img/asset1.svg`} className='w-[500px] h-[828px]  sm:top-0 sm:h-96' />
