@@ -44,9 +44,8 @@ export default function Accordion() {
                 <text className='sm:text-xs ml-2'>APP</text>
               </div>
 
-              <div className='smShare' onClick={()=>setSharepop(true)}></div>
+              <div className='smShare hidden sm:inline' onClick={()=>setSharepop(true)}></div>
             </div>
-
             {
               sharepop?<div className='sharePop' onClick={()=>setSharepop(false)}>
                 <div className='w-44 h-9 flex justify-between items-center' onClick={()=>toshare(0)}>
