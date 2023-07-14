@@ -29,18 +29,18 @@ export default function Accordion() {
           <div className='flex items-center justify-between max-w-7xl dash:px-32 h-full text-[#453D6A] sm:px-2 m-auto'>
             <div className='flex items-center gap-10 sm:gap-2'>
               <img src="/img/logo.svg" className='w-28 h-9 sm:w-16 sm:h-6' />
-              {titleBar.map((item,index)=>{
+              {/* {titleBar.map((item,index)=>{
                 return <text key={item} className={`text-base ${index==0 && 'text-[blue]'} cursor-pointer`}>{item}</text>
-              })}
+              })} */}
             </div>
 
             <div className='flex gap-3 items-center sm:gap-1'>
-              {Array(4).fill('').map((item,index)=>{
+              {Array(1).fill('').map((item,index)=>{
                 return <img src={`/img/share${index}.svg`} alt="" className='w-6 h-6 cursor-pointer' onClick={()=>toshare(index)}/>
               })}
-              <div className='flex items-center w-24 h-8 bg-[#0B5EFE] rounded-full justify-around text-[#ffffff] px-3 ml-3 sm:w-16 sm:h-6 sm:ml-1 cursor-pointer'>
-                <img src="/img/app_icon.png" alt="" className='sm:w-4'  />
-                <text className='sm:text-xs'>App</text>
+              <div className='flex justify-center items-center w-24 h-8 bg-[#0B5EFE] rounded-full text-[#ffffff] px-3 ml-3 sm:w-16 sm:h-6 sm:ml-1 cursor-pointer'>
+                <img src="/img/app_icon.svg" alt="" className='w-4'  />
+                <text className='sm:text-xs ml-2'>APP</text>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Accordion() {
 
 
         <div className='bg-[#D9E3FF] w-full'>
-          <div className='flex justify-between max-w-7xl m-auto  dash:px-32 py-16 h-80 text-[#616D8D] sm:px-2 sm:py-4 sm:flex-col sm:h-auto'>
+          {/* <div className='flex justify-between max-w-7xl m-auto  dash:px-32 py-16 h-80 text-[#616D8D] sm:px-2 sm:py-4 sm:flex-col sm:h-auto'>
             <div className='w-[485px] break-keep sm:w-full'>
               <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
               <p> Blandit id fringilla turpis tempor enim. Vel tristique suspendisse</p>
@@ -117,9 +117,9 @@ export default function Accordion() {
               <div className='#625F70 text-lg font-semibold'>Excess income</div>
               <div className='w-72 break-keep sm:w-full'>Tienex provides LP pools. Users can earn more by holding an LP consisting of tAssets and USDT.</div>
             </div>
-          </div>
-
-          <div className='flex justify-between max-w-7xl m-auto dash:px-32 items-center h-20 text-[#616D8D] border-t-1 border-[#AEBCE0] sm:px-2'>
+          </div> */}
+          <div className='w-full h-[1px] bg-[#AEBCE0] '></div>
+          <div className='flex justify-between max-w-7xl m-auto dash:px-32 items-center h-20 text-[#616D8D] sm:px-2'>
             <img src="/img/logo.svg" className='w-28 h-9' />
             <p className='pr-24 sm:pr-0 sm:w-48'>Copyright 2023. All right reserved.</p>
           </div>
