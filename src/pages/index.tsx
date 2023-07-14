@@ -28,17 +28,17 @@ export default function Accordion() {
         <div className='fixed top-0 bg-white w-full h-[70px] z-10 '>
           <div className='flex items-center justify-between max-w-7xl dash:px-32 h-full text-[#453D6A] sm:px-2 m-auto'>
             <div className='flex items-center gap-10 sm:gap-2'>
-              <img src="/img/logo.png" className='w-28 h-9 sm:w-16 sm:h-6' />
+              <img src="/img/logo.svg" className='w-28 h-9 sm:w-16 sm:h-6' />
               {titleBar.map((item,index)=>{
-                return <text key={item} className={`text-base ${index==0 && 'text-[blue]'}`}>{item}</text>
+                return <text key={item} className={`text-base ${index==0 && 'text-[blue]'} cursor-pointer`}>{item}</text>
               })}
             </div>
 
             <div className='flex gap-3 items-center sm:gap-1'>
               {Array(4).fill('').map((item,index)=>{
-                return <img src={`/img/share${index}.png`} alt="" className='w-6 h-6' onClick={()=>toshare(index)}/>
+                return <img src={`/img/share${index}.svg`} alt="" className='w-6 h-6 cursor-pointer' onClick={()=>toshare(index)}/>
               })}
-              <div className='flex items-center w-24 h-8 bg-[#0B5EFE] rounded-full justify-around text-[#ffffff] px-3 ml-3 sm:w-16 sm:h-6 sm:ml-1'>
+              <div className='flex items-center w-24 h-8 bg-[#0B5EFE] rounded-full justify-around text-[#ffffff] px-3 ml-3 sm:w-16 sm:h-6 sm:ml-1 cursor-pointer'>
                 <img src="/img/app_icon.png" alt="" className='sm:w-4'  />
                 <text className='sm:text-xs'>App</text>
               </div>
@@ -108,7 +108,7 @@ export default function Accordion() {
               <p> Blandit id fringilla turpis tempor enim. Vel tristique suspendisse</p>
               <div className='flex mt-16 mb-8 gap-4'>
                 {Array(4).fill('').map((item,index)=>{
-                  return <img src={`/img/share${index}.png`} alt="" className='w-6 h-6' onClick={()=>toshare(index)}/>
+                  return <img src={`/img/share${index}.svg`} alt="" className='w-6 h-6 cursor-pointer' onClick={()=>toshare(index)}/>
                 })}
               </div>
               <p className='text-lg'>Developers: GITHUB</p>
@@ -120,7 +120,7 @@ export default function Accordion() {
           </div>
 
           <div className='flex justify-between max-w-7xl m-auto dash:px-32 items-center h-20 text-[#616D8D] border-t-1 border-[#AEBCE0] sm:px-2'>
-            <img src="/img/logo.png" className='w-28 h-9' />
+            <img src="/img/logo.svg" className='w-28 h-9' />
             <p className='pr-24 sm:pr-0 sm:w-48'>Copyright 2023. All right reserved.</p>
           </div>
         </div>
